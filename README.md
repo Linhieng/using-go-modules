@@ -116,7 +116,7 @@ go: upgraded golang.org/x/text v0.0.0-20170915032832-14c0d48ead0c => v0.3.7
 再次测试，成功，项目成功更新依赖
 
 ```bash
-go test
+$ go test
 PASS
 ok      example.com/hello       0.224s
 ```
@@ -183,7 +183,7 @@ go: downgraded rsc.io/sampler v1.99.99 => v1.3.1
 再次测试
 
 ```bash
-go test
+$ go test
 PASS
 ok      example.com/hello       0.226s
 ```
@@ -339,5 +339,5 @@ rsc.io/sampler v1.3.1
 
 模拟了 patch 更新、mirror 更新、major 更新。
 
-> 版本这是一般为 v0.1.2，其中 0 代表主版本（major），1 代表次版本（mirror），2 代表补丁（patch）
+> 版本格式一般型如 v0.1.2，其中 0 代表主版本（major），1 代表次版本（mirror），2 代表补丁（patch）
 > mirror 和 patch 一般都是会兼容低版本的。而 major 更新一般会有较大变动。
